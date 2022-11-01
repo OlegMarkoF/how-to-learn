@@ -170,6 +170,9 @@
 .table__cell {
   margin-top: 60px;
   width: 250px;
+  list-style:  none;
+  padding: 0;
+  list-style-type: 0;
 }
 
 .table__heading {
@@ -257,6 +260,7 @@
   overflow: hidden;
   position: relative;
   padding: 100px 0;
+  z-index: 0;
 }
 
 .section-title_theme_dark {
@@ -285,13 +289,16 @@
 }
 
 .kaufman__triangle {
+  position: absolute;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
   width: 877px;
   height: 877px;
-  position: absolute;
-  z-index: 0;
   right: -210px;
   top: 0;
+  z-index: 0;
 }
+
 
 /* Блок футер */
 
@@ -312,7 +319,7 @@
   justify-content: space-between;
 }
 
-.footer__columns__content_copyright {
+.columns__content_copyright {
   position: relative;
   flex-basis: 711px;
 }
