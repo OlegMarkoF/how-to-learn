@@ -54,9 +54,9 @@
   width: 730px;
   font-size: 102px;
   z-index: 1;
-  position: absolute;
-  left: 64px;
+  padding-left: 64px;
   z-index: 2;
+  margin: 0;
 }
 
 .header__subtitle {
@@ -89,9 +89,7 @@
 
 .description {
   display: flex;
-  position: relative;
   padding-top: 100px;
-  padding-bottom: 100px;
   justify-content: center;
 }
 
@@ -109,6 +107,7 @@
   font-weight: normal;
   width: 175px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 
@@ -122,7 +121,15 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin-top: 0;
+  margin: 0;
+}
+
+.two-columns__paragraph:nth-child(2) {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .two-columns__span-accent {
@@ -194,7 +201,7 @@
 
 .feynman {
   background-color: #f2f2f2;
-  height: 890px;
+  min-height: 890px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -216,6 +223,7 @@
 }
 
 .feynman__subtitle {
+  margin: 0;
   display: flex;
   position: relative;
   line-height: 51px;
@@ -224,6 +232,7 @@
   margin-top: 70px;
   text-align: center;
   z-index: 1;
+  
 
 }
 
@@ -252,7 +261,7 @@
 /* Блок Кауфман */
 
 .kaufman {
-  background-color: #000;
+  background-color: #1f1f1f;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -304,9 +313,10 @@
 
 .footer {
   color: #fff;
-  background-color: #000;
+  background-color: #1f1f1f;
   padding: 60px 0 40px;
   min-height: 350px;
+  box-sizing: border-box;
   display: flex;
   position: relative;
   justify-content: center;
@@ -320,8 +330,10 @@
 }
 
 .columns__content_copyright {
-  position: relative;
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo__place_footer {
@@ -334,8 +346,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  position: absolute;
-  bottom: 18px;
+  align-self: flex-start;
 }
 
 .footer__column-links {
