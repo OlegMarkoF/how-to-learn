@@ -316,7 +316,6 @@
   min-height: 350px;
   box-sizing: border-box;
   display: flex;
-  position: relative;
   justify-content: center;
 
 }
@@ -327,7 +326,7 @@
   justify-content: space-between;
 }
 
-.columns__content_copyright {
+.footer__columns_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
