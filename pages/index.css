@@ -14,6 +14,7 @@
 
 @import url(../blocks/description/description.css);
 @import url(../blocks/digits/digits.css);
+@import url(../blocks/rotation/rotation.css);
 
 @import url(../blocks/two-columns/two-columns.css);
 @import url(../blocks/two-columns/__brief/two-columns__brief.css);
@@ -50,5 +51,4 @@
 @import url(../blocks/footer/__column-links/footer__column-links.css);
 @import url(../blocks/footer/__column_content/footer__column_content_copyright.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
-@import url(../blocks/footer/__social-icon/footer__social-icon.css);
-
+@import url(../blocks/footer/__social-icon/footer__social-icon.css); 
